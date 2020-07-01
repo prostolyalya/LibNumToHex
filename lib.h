@@ -10,7 +10,8 @@ public:
     Lib();
 
 public:
-    static std::string convert(const int & num);
+    static std::string convertDecToHex(const int& num);
+    static std::string convertHexToDec(const std::string& data);
 };
 
 #endif // LIB_H
