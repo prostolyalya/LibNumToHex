@@ -11,7 +11,7 @@ public:
 
 public:
     static std::string convertDecToHex(const int& num);
-    static std::string convertHexToDec(const std::string& data);
+    static int convertHexToDec(const std::string& data);
 };
 
 #endif // LIB_H
