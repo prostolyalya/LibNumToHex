@@ -4,14 +4,9 @@
 #include <string>
 #include <sstream>
 
-class Lib
-{
-public:
-    Lib();
-
-public:
+namespace libConvert {
     static std::string convertDecToHex(const int& num);
     static int convertHexToDec(const std::string& data);
-};
+}
 
 #endif // LIB_H

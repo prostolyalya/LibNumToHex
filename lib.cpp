@@ -1,10 +1,6 @@
 #include "lib.h"
 
-Lib::Lib()
-{
-}
-
-std::string Lib::convertDecToHex(const int &num)
+std::string libConvert::convertDecToHex(const int &num)
 {
     std::stringstream stream;
     stream << std::hex << num;
@@ -12,7 +8,7 @@ std::string Lib::convertDecToHex(const int &num)
     return result;
 }
 
-int Lib::convertHexToDec(const std::string &data)
+int libConvert::convertHexToDec(const std::string &data)
 {
     std::stringstream stream;
     stream << std::hex << data;
