@@ -1,15 +1,12 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lib LANGUAGES CXX)
+project(LibConvert LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(lib STATIC
-  source/lib.cpp
-  header/lib.h
+aux_source_directory(source/ sources)
+add_library(LibConvert STATIC
+    ${sources}
 )

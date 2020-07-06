@@ -1,4 +1,4 @@
-#include "header/lib.h"
+#include "include/LibConvert/lib.h"
 
 std::string libConvert::convertDecToHex(const int &num)
 {
