@@ -1,14 +1,16 @@
-#include "include/LibConvert/lib.h"
+#include <LibConvert/lib.h>
 
-std::string libConvert::convertDecToHex(const int &num)
+std::string
+libConvert::convertDecToHex( const int& num )
 {
     std::stringstream stream;
-    stream << std::hex << num;
-    std::string result( stream.str() );
+    stream << "0x" << num;
+    std::string result( stream.str( ) );
     return result;
 }
 
-int libConvert::convertHexToDec(const std::string &data)
+int
+libConvert::convertHexToDec( const std::string& data )
 {
     std::stringstream stream;
     stream << std::hex << data;
